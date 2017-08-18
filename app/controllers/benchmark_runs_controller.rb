@@ -1,14 +1,14 @@
 class BenchmarkRunsController < APIController
   def create
     repo = Repo.joins(:organization)
-      .where(name: params[:repo], organizations: { name: params[:organization] })
-      .first
+               .where(name: params[:repo], organizations: { name: params[:organization] })
+               .first
 
     initiator =
       if params[:commit_hash]
-        initiator = repo.commits.find_by_sha1(params[:commit_hash])
+        repo.commits.find_by_sha1(params[:commit_hash])
       elsif params[:version]
-        initiator = repo.releases.find_or_create_by!(version: params[:version])
+        repo.releases.find_or_create_by!(version: params[:version])
       end
 
     benchmark_type = repo.benchmark_types.find_or_create_by!(

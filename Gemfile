@@ -14,7 +14,7 @@ gem 'redis-rails'
 gem 'sidekiq'
 gem 'jquery-ui-rails'
 gem 'turbolinks'
-gem 'highcharts-rails'
+gem 'highstock-rails'
 gem 'sidetiq'
 gem 'coffee-rails'
 gem 'responders'
@@ -22,6 +22,7 @@ gem 'jbuilder'
 gem 'msgpack'
 gem 'octokit'
 gem 'bootstrap_sb_admin_base_v2'
+gem 'error_page_assets'
 
 group :development do
   gem 'spring'
@@ -59,7 +60,7 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'newrelic_rpm'
-  gem 'bugsnag'
+  gem 'sentry-raven'
 end
 gem 'nokogiri', '>= 1.6.8'
 gem 'rubyzip', '>= 1.2.1'

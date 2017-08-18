@@ -17,6 +17,9 @@ Style/AndOr:
 Style/BracesAroundHashParameters:
   Enabled: true
 
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: aligned
+
 # Align `when` with `case`.
 Layout/CaseIndentation:
   Enabled: true

@@ -56,7 +56,6 @@ GEM
     bootstrap_sb_admin_base_v2 (0.3.6)
       font-awesome-rails
       jquery-rails
-    bugsnag (5.0.1)
     builder (3.2.3)
     bullet (5.4.2)
       activesupport (>= 3.0.0)
@@ -106,6 +105,7 @@ GEM
       safe_yaml (~> 1.0.0)
     database_cleaner (1.5.3)
     debug_inspector (0.0.2)
+    error_page_assets (0.4)
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.7.0)
@@ -123,7 +123,7 @@ GEM
     haml (4.0.7)
       tilt
     hashdiff (0.3.0)
-    highcharts-rails (4.2.5)
+    highstock-rails (5.0.11)
       railties (>= 3.1)
     hitimes (1.2.4)
     i18n (0.8.6)
@@ -273,6 +273,8 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
+    sentry-raven (2.6.3)
+      faraday (>= 0.7.6, < 1.0)
     sidekiq (5.0.4)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
@@ -328,15 +330,15 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   bootstrap_sb_admin_base_v2
-  bugsnag
   bullet
   byebug
   capybara-screenshot
   coffee-rails
   database_cleaner
+  error_page_assets
   factory_girl_rails
   haml
-  highcharts-rails
+  highstock-rails
   jbuilder
   jquery-rails
   jquery-ui-rails
@@ -364,6 +366,7 @@ DEPENDENCIES
   rubyzip (>= 1.2.1)
   sass-rails
   selenium-webdriver (~> 2.53)
+  sentry-raven
   sidekiq
   sidetiq
   spring
@@ -374,4 +377,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.15.1
+   1.15.3
